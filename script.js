@@ -4,9 +4,15 @@ let currentPage = 1;
 const totalPages = 5;
 let largePage = 1;
 
-// Start the countdown when page loads
-window.addEventListener('load', () => {
-    startCountdown();
+let audioStarted = false;
+
+// Start on click
+document.addEventListener('click', () => {
+    if (!audioStarted) {
+        audioStarted = true;
+        document.querySelector('p').style.display = 'none';
+        startCountdown();
+    }
 });
 
 function startCountdown() {
