@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Lakshay! 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Rotate Phone Message -->
+    <div id="rotateMessage" class="rotate-message">
+        <div class="rotate-content">
+            <div class="phone-icon">📱</div>
+            <p>Please rotate your phone to landscape mode for the best experience!</p>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="floating-hearts">
+            <span>💖</span>
+            <span>🎂</span>
+            <span>🎈</span>
+            <span>🎉</span>
+            <span>💖</span>
+            <span>🎂</span>
+            <span>🎈</span>
+            <span>🎉</span>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Countdown Timer -->
+        <div id="countdown" class="countdown-section">
+            <h2>Get Ready for Something Special...</h2>
+            <div class="countdown-number" id="countdownNumber">3</div>
+        </div>
+
+        <!-- Happy Birthday Animation -->
+        <div id="birthdaySection" class="birthday-section hidden">
+            <div class="birthday-text">
+                <span class="letter">H</span>
+                <span class="letter">A</span>
+                <span class="letter">P</span>
+                <span class="letter">P</span>
+                <span class="letter">Y</span>
+                <span class="space"></span>
+                <span class="letter">B</span>
+                <span class="letter">I</span>
+                <span class="letter">R</span>
+                <span class="letter">T</span>
+                <span class="letter">H</span>
+                <span class="letter">D</span>
+                <span class="letter">A</span>
+                <span class="letter">Y</span>
+            </div>
+            <div class="bestie-text">LAKSHAY! 💕</div>
+        </div>
+
+        <!-- GIF Section -->
+        <div id="gifSection" class="gif-section hidden">
+            <div class="gif-container">
+                <video id="birthdayGif" src="gif.mp4" autoplay loop muted></video>
+                <div class="gif-text">Hope your day is as amazing as you are! 🌟</div>
+            </div>
+        </div>
+
+        <!-- Best Memories Section -->
+        <div id="memoriesSection" class="memories-section hidden">
+            <h2>Best Memories 📸</h2>
+            <div class="memories-content">
+                <div class="funny-quotes">
+                    <p>"When you're 6 feet tall but still can't reach the top shelf of maturity" 😂</p>
+                    <p>"6 feet of pure chaos and bad jokes" 😈</p>
+                    <p>"No matter how much we fight, at the end we started to talk again" 😂</p>
+                </div>
+                <div class="photo-decoration">
+                    <img src="image1.jpg" alt="Memory 1" class="photo photo1">
+                    <img src="image2.jpg" alt="Memory 2" class="photo photo2">
+                    <img src="image3.jpg" alt="Memory 3" class="photo photo3">
+                </div>
+            </div>
+        </div>
+
+        <!-- Flip Book -->
+        <div id="flipBook" class="flip-book hidden">
+            <div class="book">
+                <div class="page active" data-page="1">
+                    <div class="page-content">
+                        <h3>Dear Lakshay 💖</h3>
+                        <p>Another year older, another year of being the tallest troublemaker I know!</p>
+                        <div class="page-number">1</div>
+                    </div>
+                </div>
+                
+                <div class="page" data-page="2">
+                    <div class="page-content">
+                        <h3>You're Amazing! ✨</h3>
+                        <p>Your smile lights up every room and your laugh is contagious. You make everything better!</p>
+                        <div class="page-number">2</div>
+                    </div>
+                </div>
+                
+                <div class="page" data-page="3">
+                    <div class="page-content">
+                        <h3>Grateful for You 🙏</h3>
+                        <p>Thank you for being the most loyal, caring, and fun friend anyone could ask for!</p>
+                        <div class="page-number">3</div>
+                    </div>
+                </div>
+                
+                <div class="page" data-page="4">
+                    <div class="page-content">
+                        <h3>Birthday Wishes 🎂</h3>
+                        <p>May this new year bring you endless joy, success, and all your dreams come true!</p>
+                        <div class="page-number">4</div>
+                    </div>
+                </div>
+                
+                <div class="page" data-page="5">
+                    <div class="page-content">
+                        <h3>Forever Friends 👯‍♀️</h3>
+                        <p>Here's to many more years of friendship, laughter, and unforgettable moments together!</p>
+                        <div class="page-number">5</div>
+                    </div>
+                </div>
+                
+
+            </div>
+            
+            <div class="book-controls">
+                <button id="prevPage" class="page-btn">← Previous</button>
+                <span id="pageIndicator">Page 1 of 5</span>
+                <button id="nextPage" class="page-btn">Next →</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="backgroundMusic" src="hp.mp3" loop></audio>
+    <audio id="countdownAudio" src="countdown.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>

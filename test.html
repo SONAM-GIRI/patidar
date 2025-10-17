@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Birthday</title>
+    <style>
+        body { background: black; color: #ff69b4; font-family: Arial; text-align: center; padding: 50px; }
+        .section { margin: 50px 0; }
+        .hidden { display: none; }
+        .photos { display: flex; justify-content: center; gap: 10px; margin: 20px 0; }
+        .photos img { width: 60px; height: 60px; border-radius: 50%; border: 2px solid #ff69b4; }
+    </style>
+</head>
+<body>
+    <div id="countdown" class="section">
+        <h1 id="countNum">3</h1>
+    </div>
+    
+    <div id="birthday" class="section hidden">
+        <h1>HAPPY BIRTHDAY LAKSHAY! 💕</h1>
+    </div>
+    
+    <div id="gif" class="section hidden">
+        <img src="https://media.giphy.com/media/feio2yIUMtdqWjRiaF/giphy.gif" width="300">
+        <p>Hope your day is amazing! 🌟</p>
+    </div>
+    
+    <div id="book" class="section hidden">
+        <h2>Best Memories 📸</h2>
+        <div class="photos">
+            <img src="https://via.placeholder.com/60/ff69b4/fff?text=1">
+            <img src="https://via.placeholder.com/60/ff1493/fff?text=2">
+            <img src="https://via.placeholder.com/60/ffb6c1/fff?text=3">
+        </div>
+        <p>From our crazy adventures to deep conversations!</p>
+    </div>
+
+    <script>
+        let count = 3;
+        
+        function start() {
+            const timer = setInterval(() => {
+                document.getElementById('countNum').textContent = count;
+                count--;
+                
+                if (count < 0) {
+                    clearInterval(timer);
+                    document.getElementById('countdown').classList.add('hidden');
+                    document.getElementById('birthday').classList.remove('hidden');
+                    
+                    setTimeout(() => {
+                        document.getElementById('gif').classList.remove('hidden');
+                        
+                        setTimeout(() => {
+                            document.getElementById('book').classList.remove('hidden');
+                        }, 3000);
+                    }, 3000);
+                }
+            }, 1000);
+        }
+        
+        window.onload = start;
+    </script>
+</body>
+</html>
